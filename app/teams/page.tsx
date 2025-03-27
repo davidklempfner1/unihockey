@@ -1,9 +1,25 @@
+'use client';
+
+// import 'server-only'
 import React from 'react'
 import Link from 'next/link'
 
+export type Team = {
+    id: number;
+    name: string;
+};
+
 const Page = () => {
+    if (typeof window == "undefined") {
+        console.log("Application is on server side");
+    } else {
+        alert("Application is on client side");
+    }
+
     // TODO: get from db
-    const teams = [
+
+
+    const teams: Team[] = [
         { id: 1, name: 'Zombies' },
         { id: 2, name: 'Wombats' },
         { id: 3, name: 'Communists' },
