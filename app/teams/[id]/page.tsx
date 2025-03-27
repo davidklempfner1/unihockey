@@ -11,6 +11,7 @@ const Page = ({ params }: { params: { id: string } }) => {
     // TODO: use <Suspense>
     return (
         <>
+            {params.id}
             {/* <h1 className="text-4xl font-bold text-gray-800">{`${teamName} ${params.id} Players`}</h1>
             <ul className="flex flex-col gap-4">
                 {players.map((player) => (
