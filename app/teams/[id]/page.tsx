@@ -1,6 +1,7 @@
 import React from 'react'
+import { use } from "react";
 
-const Page = ({ params }: { params: { id: string } }) => {
+const Page = ({ params }: { params: Promise<{ id: string }> }) => {
     // TODO: get players from db given team id
     // const teamName = 'Zombies';
     // const players = [
@@ -9,9 +10,11 @@ const Page = ({ params }: { params: { id: string } }) => {
     //     { id: 3, name: 'Charlie' },
     // ];
     // TODO: use <Suspense>
+
+    const { id } = use(params);
     return (
         <>
-            {params.id}
+            {id}
             {/* <h1 className="text-4xl font-bold text-gray-800">{`${teamName} ${params.id} Players`}</h1>
             <ul className="flex flex-col gap-4">
                 {players.map((player) => (
