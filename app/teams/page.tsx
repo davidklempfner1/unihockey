@@ -7,8 +7,13 @@ import TeamLinkListItem from '@/app/teams/TeamLinkListItem';
 import { TeamProvider } from './TeamContext';
 
 const Page = () => {
-    // TODO: get from db
+    // if (typeof window == "undefined") {
+    //     console.log("Players Page - Application is on server side");
+    // } else {
+    //     alert("Players Page - Application is on client side");
+    // }
 
+    // TODO: get from db
     const teams: Team[] = [
         { id: 1, name: 'Zombies' },
         { id: 2, name: 'Wombats' },

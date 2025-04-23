@@ -5,9 +5,12 @@ const Page = () => {
     //     alert("Players Page - Application is on client side");
     // }
 
-  return (
-    <div>Players</div>
-  )
+    return (
+        <>
+            <div>Players</div>
+            <button>This is a button</button>
+        </>
+    )
 }
 
 export default Page

@@ -6,7 +6,7 @@ const TeamLinkListItem = () => {
         <li className="bg-white p-4 shadow-md">
             <TeamLink />
         </li>
-    )
-}
+    );
+};
 
 export default TeamLinkListItem
