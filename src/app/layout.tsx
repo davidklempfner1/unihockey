@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
     title: 'My App',
     description: 'Barebones Next.js App',
@@ -7,6 +9,7 @@ export const metadata = {
     return (
       <html lang="en">
         <body>{children}</body>
+        <Link href="/players">Players</Link>
       </html>
     );
   }
